@@ -8,7 +8,7 @@
   "default_locale": "zh-CN",
 
   "browser_action": {
-    "default_icon": "icon.png",
+    "default_icon": "resources/zhihu.png",
     "default_title": "知乎看过",
     "default_popup": "popup.html"
   },
