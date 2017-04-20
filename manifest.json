@@ -5,8 +5,6 @@
   "description": "过滤已看过或者不想看的答案，提高阅读效率",
   "version": "1.0",
 
-  "default_locale": "zh-CN",
-
   "browser_action": {
     "default_icon": "resources/zhihu.png",
     "default_title": "知乎看过",
