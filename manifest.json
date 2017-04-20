@@ -1,0 +1,39 @@
+{
+  "manifest_version": 2,
+
+  "name": "知乎看见",
+  "description": "过滤已看过或者不想看的答案，提高阅读效率",
+  "version": "1.0",
+
+  "default_locale": "zh-CN",
+
+  "browser_action": {
+    "default_icon": "icon.png",
+    "default_title": "知乎看见",
+    "default_popup": "popup.html"
+  },
+
+  "author": "deepbluez",
+
+  "content_scripts": [
+    {
+      "matches": ["https://www.zhihu.com/question/*"],
+      "css": ["content_scripts/readed.css"],
+      "js": ["content_scripts/readed.js"]
+    }
+  ],
+
+  "homepage_url": "https://github.com/deepbluez/readed",
+
+  "options_page": "options.html",
+  "options_ui": {
+    "chrome_style": true,
+    "page": "options.html"
+  },
+
+  "permissions": [
+    "https://www.zhihu.com/",
+    "storage",
+    "unlimitedStorage"
+  ]
+}
