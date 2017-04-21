@@ -6,9 +6,11 @@
   "version": "1.0",
 
   "browser_action": {
-    "default_icon": "resources/zhihu.png",
+    "default_icon": {
+      "32": "resources/zhihu.png"
+    },
     "default_title": "知乎看过",
-    "default_popup": "popup.html"
+    "default_popup": "resources/popup.html"
   },
 
   "author": "deepbluez",
@@ -23,10 +25,10 @@
 
   "homepage_url": "https://github.com/deepbluez/readed",
 
-  "options_page": "options.html",
+  "options_page": "resources/options.html",
   "options_ui": {
     "chrome_style": true,
-    "page": "options.html"
+    "page": "resources/options.html"
   },
 
   "permissions": [
