@@ -1,0 +1,12 @@
+body {
+    min-width: 220px !important;
+}
+
+table.options, table.options tr, table.options td {
+    border: 0 solid black !important;
+}
+
+.image32 {
+    width: 32px !important;
+    height: 32px !important;
+}

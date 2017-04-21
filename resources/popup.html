@@ -3,11 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <title>知乎看过</title>
+
+    <link rel="stylesheet" type="text/css" href="../libs/semantic-ui/semantic.css">
+    <link rel="stylesheet" type="text/css" href="css/popup.css">
+
     <script type="application/javascript" src="../libs/jquery/jquery-3.2.1.js"></script>
     <script type="application/javascript" src="../libs/semantic-ui/semantic.min.js"></script>
     <script type="application/javascript" src="js/popup.js"></script>
 </head>
 <body>
-
+<div class="ui middle aligned center aligned grid">
+    <div class="column">
+        <h2 class="ui teal image header">
+            <img src="zhihu.png" class="image image32">
+            <div class="content">知乎看过</div>
+        </h2>
+        <div class="ui">
+            <div class="field">
+                已读 10 / 100
+            </div>
+        </div>
+        <div class="ui divider"></div>
+        <table class="ui table unstackable options">
+            <tr>
+                <td>
+                    <div class="ui toggle checkbox">
+                        <input type="checkbox" name="local-use" id="local-use" class="left">
+                        <label for="local-use">本答案开启过滤</label>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="item">
+                        <div class="ui toggle checkbox">
+                            <input type="checkbox" name="global-use" id="global-use" class="left">
+                            <label for="global-use">所有答案开启过滤</label>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </div>
+</div>
 </body>
 </html>
